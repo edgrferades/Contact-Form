@@ -1,4 +1,76 @@
-.h1 {
-  background-color: black;
-  color: aqua;
+* {
+  padding: 0%;
+  margin: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#form {
+  background-color: rgb(228, 231, 255);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+#form .container {
+  background-color: rgb(255, 255, 255);
+  padding: 50px;
+  max-width: 768px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 0 5px rgb(78, 78, 78);
+          box-shadow: 0 0 5px rgb(78, 78, 78);
+  border-radius: 8px;
+}
+#form .container #status {
+  text-align: center;
+  width: 60%;
+  margin: 15px auto;
+  border-radius: 8px;
+}
+#form .container .success {
+  background-color: rgb(0, 255, 0);
+  -webkit-animation: status 4s ease forwards;
+          animation: status 4s ease forwards;
+}
+#form .container .error {
+  background-color: red;
+  color: white;
+  -webkit-animation: status 4s ease forwards;
+          animation: status 4s ease forwards;
+}
+@-webkit-keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
